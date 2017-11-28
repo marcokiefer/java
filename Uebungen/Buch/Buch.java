@@ -1,9 +1,6 @@
 
 /**
- * Write a description of class Buch here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Marco Kiefer) 
  */
 public class Buch
 {
@@ -16,7 +13,7 @@ public class Buch
     private Seite seite3;
 
     public Buch(){
-        this. titel = " -kein Titel-";
+        this. titel = "- kein Titel -";
         this.seite0 = new Seite();
         this.seite1 = new Seite();
         this.seite2 = new Seite();

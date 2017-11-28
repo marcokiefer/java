@@ -2,7 +2,7 @@
 /**
  * Write a description of class Seite here.
  * 
- * @author (your name) 
+ * @author (Marco Kiefer) 
  * @version (a version number or a date)
  */
 public class Seite
@@ -11,20 +11,23 @@ public class Seite
     private String text;
 
     public Seite(){
-        this.text = "- kein Text";
+        this.text = "- kein Text vorhanden -";
     }
+
     public Seite(String text){
         this.text = text;
     }
-   
+
     public void setText(String text){
-       this.text = text;
+        if (text != null){
+            this.text = text;
+        }
     }
-    
+
     public String getText(){
-      return text;  
+        return text;  
     }
-    
+
     public void drucken(){
         System.out.println(text);
     }
