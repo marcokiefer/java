@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Ball
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Ball.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=maxFuellmenge
+comment1.target=Ball(double)
+comment2.params=
+comment2.target=double\ getMaxFuellmenge()
+comment3.params=
+comment3.target=double\ getAktuelleFuellmenge()
+comment4.params=fuellmenge
+comment4.target=void\ aufpumpen(double)
+comment5.params=menge
+comment5.target=void\ luftRausLassen(double)
+comment6.params=
+comment6.target=double\ getLuftdruckInProzent()
+numComments=7
