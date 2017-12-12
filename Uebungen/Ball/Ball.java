@@ -50,15 +50,15 @@ public class Ball{
     }
 
     public double getLuftdruckInProzent(){
-        double prozent = maxFuellmenge / 100 * aktuelleFuellmenge;
-        prozent = prozent * 100;
-        //System.out.println(prozent +" %");
-        return prozent;
+       return aktuelleFuellmenge / maxFuellmenge;
     }
 
     public void druckeInfo(){
+        //System.out.println("----------------------------------------------------------------");
         System.out.println("Aktuelle Füllmenge: "+ aktuelleFuellmenge +", Maximale Füllmenge: "+ maxFuellmenge);
-        System.out.println("Luftdruck in Prozent: "+ (maxFuellmenge / 100 * aktuelleFuellmenge)*100);
-        System.out.println("----------------------------------------------------------------");
+        //System.out.println("Luftdruck in Prozent: "+ this.getLuftdruckInProzent() *100);
+        //System.out.println("----------------------------------------------------------------");
+        System.out.printf("Luftdruck: %2.2f %%%n", this.getLuftdruckInProzent()*100);
+        //System.out.println("-------------------------------------");
     }
 }
