@@ -20,13 +20,27 @@ public class Schulklasse
     }
     public Schulklasse(String bezeichnung){
         this.bezeichnung = bezeichnung;
-        
-            }
-    public Schulklasse(Sting bezeichnung, Schueler schueler0, Schueler schueler1, Schueler schueler2,){
+    }
+    public Schulklasse(String bezeichnung, Schueler schueler0, Schueler schueler1, Schueler schueler2){
         this.bezeichnung = bezeichnung;
         this.schueler0 = schueler0;
-        this.schueler
+        this.schueler1 = schueler1;
+        this.schueler2 = schueler2;
     }
-
+    
+    public void setBezeichnung(String bezeichnung){
+        this.bezeichnung = bezeichnung;
+    }
+    
+    public String getBezeichnung(){
+        return bezeichnung;
+    }
+    
+    public void druckeInfo(){
+    System.out.println("Klasse: " + bezeichnung);
+    System.out.println("Name S1: " + schueler0 + ", Mitschüler: " + schueler0.getMitSchueler());
+    System.out.println("Name S2: " + schueler1 + ", Mitschüler: " + schueler1.getMitSchueler()); 
+    System.out.println("Name S2: " + schueler2 + ", Mitschüler: " + schueler2.getMitSchueler()); 
+    }
     
    }

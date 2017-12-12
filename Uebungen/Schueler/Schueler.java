@@ -7,7 +7,6 @@
  */
 public class Schueler
 {
-
     private String name;
     private int alter;
     private Schueler mitSchueler; 
@@ -41,14 +40,23 @@ public class Schueler
     }
 
     public void setAlter(int alter){
-        this.alter = alter;
+        if (alter <= 0){
+            System.out.println("Richtiges Alter eintragen");
+        } else {
+            this.alter = alter;
+        }
     }
 
     public void setMitSchueler(Schueler verweisSchueler){
         this.mitSchueler = verweisSchueler;
     }
-    
+
     public void druckeInfo(){
+        if(mitSchueler == null){
+            System.out.println("Keinen Mitschüler ausgewählt");
+            return ;
+        }
         System.out.println("Name: "+ name + ", Alter: " + alter + ", Name des Mitschülers: "+ mitSchueler.getName());
     }
+
 }
