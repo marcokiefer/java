@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Notizbuch()
+comment1.params=notiz
+comment1.target=void\ hinzufuegen(java.lang.String)
+comment2.params=
+comment2.target=int\ anzahlNotizen()
+comment3.params=index
+comment3.target=void\ zeigeNotiz(int)
+numComments=4

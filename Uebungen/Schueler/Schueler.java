@@ -12,14 +12,15 @@ public class Schueler
     private Schueler mitSchueler; 
 
     public Schueler(){
-        this.name = "-Kein Alter";
+        this.name = "-Kein Name";
         this.alter = -1;
         this.mitSchueler = null;
     }
 
     public Schueler(String name, int alter){
-        this.name = name;
-        this.alter = alter;
+        this();
+        this.setName(name);
+        this.setAlter(alter);
         this.mitSchueler = null;
     }
 
@@ -40,23 +41,24 @@ public class Schueler
     }
 
     public void setAlter(int alter){
-        if (alter <= 0){
-            System.out.println("Richtiges Alter eintragen");
-        } else {
-            this.alter = alter;
-        }
+        if (alter < 0){
+            System.out.println("Alter darf nicht negativ sein");
+            return;
+        } 
+        this.alter = alter;
     }
 
-    public void setMitSchueler(Schueler verweisSchueler){
-        this.mitSchueler = verweisSchueler;
+    public void setMitSchueler(Schueler mitschueler){
+        this.mitSchueler = mitschueler;
     }
 
     public void druckeInfo(){
-        if(mitSchueler == null){
-            System.out.println("Keinen Mitschüler ausgewählt");
-            return ;
+        System.out.println("Name: "+ this.name + ", Alter: " + this.alter );
+        String nameMitschueler = "-kein Mitschüler vorhanden";
+        if(mitSchueler != null){
+           nameMitschueler = mitSchueler.getName();
         }
-        System.out.println("Name: "+ name + ", Alter: " + alter + ", Name des Mitschülers: "+ mitSchueler.getName());
+        System.out.println("Mitschüler: " +nameMitschueler);
     }
 
 }
