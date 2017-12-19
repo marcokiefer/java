@@ -56,10 +56,8 @@ public class Schulklasse
         this.schueler2 = schueler2;
     }
     
-    
-    public void druckeInfo(){
-    
-        
+        public void druckeInfo(){
+           
     System.out.println("Klasse: " + bezeichnung);
     System.out.println("Name S1: " + schueler0 + ", Mitschüler: " + schueler0.getMitSchueler());
     System.out.println("Name S2: " + schueler1 + ", Mitschüler: " + schueler1.getMitSchueler()); 

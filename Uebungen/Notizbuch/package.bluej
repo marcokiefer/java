@@ -1,19 +1,19 @@
 #BlueJ package file
 objectbench.height=156
-objectbench.width=278
+objectbench.width=649
 package.editor.height=259
-package.editor.width=462
-package.editor.x=51
-package.editor.y=278
+package.editor.width=833
+package.editor.x=6
+package.editor.y=6
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
-target1.editor.height=700
-target1.editor.width=900
-target1.editor.x=672
-target1.editor.y=279
+target1.editor.height=967
+target1.editor.width=660
+target1.editor.x=95
+target1.editor.y=27
 target1.height=50
 target1.name=Notizbuch
 target1.naviview.expanded=false

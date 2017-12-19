@@ -28,11 +28,20 @@ public class Notizbuch{
         }
     }
     public String loescheNotiz(int index){
-        if (index <0 && index < anzahlNotizen(){
+        if(checkIndex(index)){
             String zuLoeschendeNotiz = notizen.get(index);
             notizen.remove(index);
-            return zuLoeschendeNotiz;
+            return zuLoeschendeNotiz; 
         } 
         return null;    
+    }
+    private boolean checkIndex(int index){
+        return index >= 0 && index < anzahlNotizen();
+       
+    }
+    public void alleNotizenAusgeben(){
+         for(String notiz:notizen){
+             System.out.println(notiz);
+         }
     }
 }

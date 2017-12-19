@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Schulklasse2()
+comment1.params=bezeichnung
+comment1.target=Schulklasse2(java.lang.String)
+comment2.params=schueler
+comment2.target=void\ hinzufuegen(Schueler)
+numComments=3
